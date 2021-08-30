@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Field test should match the snapshot 1`] = `
+<input
+  class="MuiInputBase-input"
+  type="text"
+  value="text"
+/>
+`;
