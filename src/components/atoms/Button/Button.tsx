@@ -1,12 +1,14 @@
 import React from "react";
-import Button from '@material-ui/core/Button';
+import {Button as MuiButton, Typography} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import {COLORS} from '../../../theme/constants';
 
 
-interface Props {
+interface ButtonProps {
   name: string;
-  click?: () => void;
+  onClick?: () => void;
   variant?: "contained"|"outlined";
+  size?: string;
 }
 const useStyles = makeStyles({
   root: {
@@ -14,23 +16,25 @@ const useStyles = makeStyles({
   height: '38px',
   padding: '8px 21px 8px 23px',
   borderRadius: '4px',
-  border: 'solid 1px rgba(255, 255, 255, 0)',
+  border: 'solid 1px COLORS.TRANSPARENT_0',
   textTransform: "none",
-}});
+  color: COLORS.WHITE_50,
+  backgroundColor: COLORS.PRIMARY_COLOR_500
+}
+});
 
-
-const CustomButton: React.FC<Props> = ({ 
+const Button: React.FC<ButtonProps> = ({ 
     name,
     children,
-    click, 
+    onClick, 
     variant="outlined"
   }) => { 
   const classes = useStyles();
   return (
-    <Button className={classes.root} variant={variant} color="primary" onClick={()=> click} >
-     {name}
-    </Button>
+    <MuiButton className={classes.root} variant={variant} onClick={()=> onClick}  >
+     <Typography variant="body1" >{name}</Typography>
+    </MuiButton>
   );
 }
 
-export default CustomButton;
+export default Button;
