@@ -18,3 +18,26 @@ exports[`button renders correctly check the button name 1`] = `
   </button>
 </DocumentFragment>
 `;
+
+exports[`button renders correctly should match snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-root-1"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        Discover
+      </p>
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</DocumentFragment>
+`;

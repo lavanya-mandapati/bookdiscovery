@@ -1,5 +1,5 @@
 import { createTheme } from "@material-ui/core/styles";
-import "./constants.css";
+import "./constants.ts";
 
 
 const theme = createTheme({
