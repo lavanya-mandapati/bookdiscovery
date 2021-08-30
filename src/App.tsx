@@ -1,3 +1,8 @@
+import Button from './components/atoms/Button/Button';
+
 export const App = () => {
-    return <h1>React Ts</h1>
+    return (<div>
+        <Button name="Discover" variant="contained"/>
+        <Button name="Reply" variant="outlined" />
+    </div>);
 }
