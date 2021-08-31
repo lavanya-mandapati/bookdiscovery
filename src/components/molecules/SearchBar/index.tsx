@@ -36,13 +36,16 @@ const SearchBar: React.FC<SearchBarProps>= ({searchValue,placeholder}) => {
     const onChange=(event:React.ChangeEvent<{value:unknown;}>)=>{
         setSearchText(event.target.value as string);
     }
+    const handleClose=()=>{
+        setSearchText('');
+    }
 
     return (
         <Paper className={classes.root} >
             <SearchIcon className={classes.icon} />
             <InputField placeholder={placeholder} value={searchText} disableUnderline={true} data-testid="onChange" onChange={onChange}>
             </InputField>
-            {searchText && <CloseIcon className={classes.closeIcon} />}
+            {searchText && <CloseIcon className={classes.closeIcon} onClick={handleClose} />}
         </Paper>
     );
 }
