@@ -5,7 +5,7 @@ exports[`Avatar test should match the snapshot 1`] = `
   class="MuiAvatar-root MuiAvatar-circular"
 >
   <img
-    alt="userAvatar"
+    alt="User Avatar"
     class="MuiAvatar-img"
     src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"
   />
