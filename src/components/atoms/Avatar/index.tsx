@@ -1,4 +1,4 @@
-import Avatar from '@material-ui/core/Avatar';
+import {Avatar as MuiAvatar} from '@material-ui/core';
   
 export type AvatarProps={
     src?:string;
@@ -7,10 +7,10 @@ export type AvatarProps={
     variant?:'rounded'|'square'|'circular'|'circle';
 };
   
-const AvatarAtom:React.FC<AvatarProps>= ({src,children,variant,className}) => {
+const Avatar:React.FC<AvatarProps>= ({src,children,variant,className}) => {
     return (
-        <Avatar alt="User Avatar" src={src} variant={variant} className={className} children={children}/>
+        <MuiAvatar alt="User Avatar" src={src} variant={variant} className={className} children={children}/>
     );
 }
 
-export default AvatarAtom;
+export default Avatar;
