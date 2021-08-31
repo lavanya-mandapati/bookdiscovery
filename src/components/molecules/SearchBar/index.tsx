@@ -8,7 +8,7 @@ import theme from "../../../theme/theme";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      padding: '2px 4px',
+      padding: theme.spacing(0.5, 1),
       display: 'flex',
       alignItems: 'center',
       width: 400,
@@ -27,11 +27,10 @@ export type SearchBarProps={
     placeholder:string;
 };
 
-
 const SearchBar: React.FC<SearchBarProps>= ({searchValue,placeholder}) => {
 
     const classes = useStyles();
-    const [searchText,setSearchText]=useState(searchValue);
+    const [searchText,setSearchText]=useState<string>(searchValue?searchValue:"");
 
     const onChange=(event:React.ChangeEvent<{value:unknown;}>)=>{
         setSearchText(event.target.value as string);
@@ -43,7 +42,7 @@ const SearchBar: React.FC<SearchBarProps>= ({searchValue,placeholder}) => {
     return (
         <Paper className={classes.root} >
             <SearchIcon className={classes.icon} />
-            <InputField placeholder={placeholder} value={searchText} disableUnderline={true} data-testid="onChange" onChange={onChange}>
+            <InputField placeholder={placeholder} value={searchText} disableUnderline={true} data-testid="search-field" onChange={onChange}>
             </InputField>
             {searchText && <CloseIcon className={classes.closeIcon} onClick={handleClose} />}
         </Paper>
