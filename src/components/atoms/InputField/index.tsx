@@ -1,27 +1,20 @@
-import { InputBase } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
+import TextField from '@material-ui/core/TextField';
 
-const useStyles = makeStyles((theme) => ({
-    input: {
-        width: '400px',
-        height:'38px',
-    }
-  }));
-  
-
-export type InputFieldProps={
+export type TextFieldProps={
   placeholder?:string;
-  value:unknown;
+  value?:unknown;
+  type?:string;
+  size?:'small'|'medium';
+  disableUnderline?:boolean;
+  autoFocus?:boolean;
   onChange?:React.ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement>;
 }
 
-const InputField:React.FC<InputFieldProps>= ({placeholder,value,onChange}) => {
-
-    const classes = useStyles();
-    return (
-        <InputBase  className={classes.input} placeholder={placeholder} value={value} onChange={onChange}></InputBase>
-    );
+const InputField:React.FC<TextFieldProps>= ({placeholder,size,autoFocus,value,type,onChange,disableUnderline}) => {
+  return (
+      <TextField value={value} size={size}  placeholder={placeholder} autoFocus={autoFocus} onChange={onChange} type={type} InputProps={{ disableUnderline: disableUnderline }}/>
+  );
 
 }
 
-export default InputField
+export default InputField;
