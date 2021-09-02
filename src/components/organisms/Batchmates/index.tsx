@@ -83,22 +83,28 @@ const useStyles = makeStyles({
   }
 });
 
-export type Mock = {
+export type Image = {
   image: string;
 };
 
 export type BatchmatesProps = {
-  booksSrc: Array<Mock>;
+  booksSrc: Array<Image>;
 };
 
 const Batchmates: React.FC<BatchmatesProps> = ({ booksSrc }) => {
   const classes = useStyles();
+  const bookTitle: string = "Inorganic Chemistry";
+  const authorName: string = "J D Lee";
+  const authorBy: string = "by";
+  const bookField: string = "Field";
+  const authorField: string = "Chemistry";
+  const rating:string = "4.0";
   return (
     <>
     <Grid container>
         <Grid item xs={12} >
         <Card className={classes.header} variant="outlined">
-            <Typography className={classes.typography}>Your batchmates also read</Typography>
+            <Typography className={classes.typography} children='Your batchmates also read' />
         </Card>
         </Grid>
         <Grid item xs={12} >
@@ -116,27 +122,23 @@ const Batchmates: React.FC<BatchmatesProps> = ({ booksSrc }) => {
                 </Grid>
                 <Grid item xs={8} className={classes.innerGrid}>
                   <Grid>
-                    <Typography>Inorganic Chemistry</Typography>
+                    <Typography children={bookTitle} />
                   </Grid>
                   <Grid className={classes.subject}>
-                    <Typography variant="caption"  className={classes.constants}>
-                      by
-                    </Typography>
-                    <Typography  className={classes.name}>J D Lee</Typography>
+                    <Typography variant="caption"  className={classes.constants} children={authorBy} />
+                    <Typography  className={classes.name} children={authorName} />
                   </Grid>
                   <Grid container spacing={9}>
                     <Grid item xs={3}>
                       <Rating size="small" defaultValue={4} />
                     </Grid>
                     <Grid item xs={1} className={classes.text}>
-                      <Typography>4.0</Typography>
+                      <Typography className={rating} />
                     </Grid>
                   </Grid>
                   <Grid className={classes.subject}>
-                    <Typography variant="caption"  className={classes.constants}>
-                      Field: 
-                    </Typography>
-                    <Typography className={classes.name}>Chemistry</Typography>
+                    <Typography variant="caption"  className={classes.constants} children={bookField} />
+                    <Typography className={classes.name} children={authorField} />
                   </Grid>
                 </Grid>
               </Grid>
