@@ -6,43 +6,43 @@ import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
 import Rating from "@material-ui/lab/Rating";
 import theme from "../../../theme/theme";
-import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
-import {COLORS} from '../../../theme/constants';
+import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
+import { COLORS } from "../../../theme/constants";
 const useStyles = makeStyles({
   root: {
     width: 350,
     height: 128,
-    borderRadius:'unset',
+    borderRadius: "unset",
   },
-  subject:{
-      display:'flex',
-      alignItems:'center',
-      columnGap:theme.spacing(1.5)
+  subject: {
+    display: "flex",
+    alignItems: "center",
+    columnGap: theme.spacing(1.5),
   },
-  innerGrid:{
-    display: 'grid',
-    rowGap:'5px'
+  innerGrid: {
+    display: "grid",
+    rowGap: "5px",
   },
-  header:{
-      width:350,
-      height:50,
-      borderRadius:'unset',
-      textAlign: 'center',
-      justifyContent: 'center',
+  header: {
+    width: 350,
+    height: 50,
+    borderRadius: "unset",
+    textAlign: "center",
+    justifyContent: "center",
   },
-  header1:{
-    width:350,
-    height:50,
-    borderRadius:'unset',
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems:'center',
-    display:'flex',
-    color:theme.palette.primary.main,
+  header1: {
+    width: 350,
+    height: 50,
+    borderRadius: "unset",
+    textAlign: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    display: "flex",
+    color: theme.palette.primary.main,
   },
   bullet: {
     display: "inline-block",
-    margin: theme.spacing(0,0.5),
+    margin: theme.spacing(0, 0.5),
     transform: "scale(0.8)",
   },
   title: {
@@ -53,34 +53,35 @@ const useStyles = makeStyles({
   },
   text: {
     marginLeft: theme.spacing(8),
-    marginTop:theme.spacing(-0.5),
+    marginTop: theme.spacing(-0.5),
   },
   avatar: {
     height: "104px",
     width: "90px",
   },
-  typography:{
-      fontSize:theme.typography.h6.fontSize,
-      color:'#6b6c6f',
-      display: 'flex',
-      marginLeft: theme.spacing(3.5),
-      marginTop: theme.spacing(3),
+  typography: {
+    fontSize: theme.typography.h6.fontSize,
+    color: "#6b6c6f",
+    display: "flex",
+    marginLeft: theme.spacing(3.5),
+    marginTop: theme.spacing(3),
   },
-  typography1:{
+  typography1: {
     fontSize: theme.typography.body2.fontSize,
-    display: 'flex',
-    marginLeft: 'auto',
-    justifyContent: 'flex-end',
+    display: "flex",
+    marginLeft: "auto",
+    justifyContent: "flex-end",
   },
-  footer:{
-      marginRight:theme.spacing(7),
-  },name:{
-      fontSize:theme.spacing(3),
-      color:COLORS.CHARCOAL_GREY,
+  footer: {
+    marginRight: theme.spacing(7),
   },
-  constants:{
-      color:COLORS.ICON_500,
-  }
+  name: {
+    fontSize: theme.spacing(3),
+    color: COLORS.CHARCOAL_GREY,
+  },
+  constants: {
+    color: COLORS.ICON_500,
+  },
 });
 
 export type Image = {
@@ -91,71 +92,91 @@ export type BatchmatesProps = {
   booksSrc: Array<Image>;
 };
 
+const CONSTANTS = {
+  BOOKTITLE: "Inorganic Chemistry",
+  AUTHORNAME: "J D Lee",
+  BY: "by",
+  FIELD: "Field",
+  AUTHORFIELD: "Chemistry",
+  RATING: "4.0",
+};
+
 const Batchmates: React.FC<BatchmatesProps> = ({ booksSrc }) => {
   const classes = useStyles();
-  const bookTitle: string = "Inorganic Chemistry";
-  const authorName: string = "J D Lee";
-  const authorBy: string = "by";
-  const bookField: string = "Field";
-  const authorField: string = "Chemistry";
-  const rating:string = "4.0";
+
   return (
     <>
-    <Grid container>
-        <Grid item xs={12} >
-        <Card className={classes.header} variant="outlined">
-            <Typography className={classes.typography} children='Your batchmates also read' />
-        </Card>
-        </Grid>
-        <Grid item xs={12} >
-      {booksSrc.map((book, index) => {
-        return (
-          <Card className={classes.root} key={index} variant="outlined">
-            <CardContent>
-              <Grid container spacing={2}>
-                <Grid item>
-                  <Avatar
-                    src={book.image}
-                    className={classes.avatar}
-                    variant="square"
-                  />
-                </Grid>
-                <Grid item xs={8} className={classes.innerGrid}>
-                  <Grid>
-                    <Typography children={bookTitle} />
-                  </Grid>
-                  <Grid className={classes.subject}>
-                    <Typography variant="caption"  className={classes.constants} children={authorBy} />
-                    <Typography  className={classes.name} children={authorName} />
-                  </Grid>
-                  <Grid container spacing={9}>
-                    <Grid item xs={3}>
-                      <Rating size="small" defaultValue={4} />
-                    </Grid>
-                    <Grid item xs={1} className={classes.text}>
-                      <Typography className={rating} />
-                    </Grid>
-                  </Grid>
-                  <Grid className={classes.subject}>
-                    <Typography variant="caption"  className={classes.constants} children={bookField} />
-                    <Typography className={classes.name} children={authorField} />
-                  </Grid>
-                </Grid>
-              </Grid>
-            </CardContent>
+      <Grid container>
+        <Grid item xs={12}>
+          <Card className={classes.header} variant="outlined">
+            <Typography
+              className={classes.typography}
+              children="Your batchmates also read"
+            />
           </Card>
-        );
-      })}
-         <Grid item xs={12} >
-        <Card className={classes.header1} variant="outlined">
-            <Typography className={classes.typography1}>See all</Typography>
-            <KeyboardArrowRightIcon className={classes.footer}/>
-        </Card>
         </Grid>
-      </Grid>
+        <Grid item xs={12}>
+          {booksSrc.map((book, index) => {
+            return (
+              <Card className={classes.root} key={index} variant="outlined">
+                <CardContent>
+                  <Grid container spacing={2}>
+                    <Grid item>
+                      <Avatar
+                        src={book.image}
+                        className={classes.avatar}
+                        variant="square"
+                      />
+                    </Grid>
+                    <Grid item xs={8} className={classes.innerGrid}>
+                      <Grid>
+                        <Typography children={CONSTANTS.BOOKTITLE} />
+                      </Grid>
+                      <Grid className={classes.subject}>
+                        <Typography
+                          variant="caption"
+                          className={classes.constants}
+                          children={CONSTANTS.BY}
+                        />
+                        <Typography
+                          className={classes.name}
+                          children={CONSTANTS.AUTHORNAME}
+                        />
+                      </Grid>
+                      <Grid container spacing={9}>
+                        <Grid item xs={3}>
+                          <Rating size="small" defaultValue={4} />
+                        </Grid>
+                        <Grid item xs={1} className={classes.text}>
+                          <Typography className={CONSTANTS.RATING} />
+                        </Grid>
+                      </Grid>
+                      <Grid className={classes.subject}>
+                        <Typography
+                          variant="caption"
+                          className={classes.constants}
+                          children={CONSTANTS.FIELD}
+                        />
+                        <Typography
+                          className={classes.name}
+                          children={CONSTANTS.AUTHORFIELD}
+                        />
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </Card>
+            );
+          })}
+          <Grid item xs={12}>
+            <Card className={classes.header1} variant="outlined">
+              <Typography className={classes.typography1}>See all</Typography>
+              <KeyboardArrowRightIcon className={classes.footer} />
+            </Card>
+          </Grid>
+        </Grid>
       </Grid>
     </>
-    
   );
 };
 export default Batchmates;
