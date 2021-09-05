@@ -162,7 +162,15 @@
 <a name='L103'></a><a href='#L103'>103</a>
 <a name='L104'></a><a href='#L104'>104</a>
 <a name='L105'></a><a href='#L105'>105</a>
-<a name='L106'></a><a href='#L106'>106</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
@@ -243,7 +251,6 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -267,119 +274,136 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import { CardActions, Typography } from '@material-ui/core';
-import { COLORS } from '../../../theme/constants';
-import theme from '../../../theme/theme';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import { CardActions, Typography } from "@material-ui/core";
+import { COLORS } from "../../../theme/constants";
+import theme from "../../../theme/theme";
 &nbsp;
 const useStyles = makeStyles({
-    root: {
-        width: "358px",
-        height: "90px",
-        padding: theme.spacing(1, 1, 1, 8),
-        borderRadius: "4px",
-        boxShadow: "none"
-    },
-    image: {
-        width: "60px",
-        height: "75px",
-        margin: theme.spacing(2,2),
-        objectFit: "contain"
-    },
-    title: {
-        width: "263px",
-        height: "22px",
-        margin: theme.spacing(1),
-        color: COLORS.CHARCOAL_GREY_100,
-    },
-    author: {
-        width: "14px",
-        height: "18px",
-        color: COLORS.ICON_500,
-        textTransform: "none"
-    },
-    authorName: {
-        width: "150px",
-        height: "18px",
-        color: COLORS.CHARCOAL_GREY,
-        textTransform: "none",
-        textAlign: "left"
-    },
-    field: {
-        width: "32px",
-        height: "18px",
-        textTransform: "none",
-        color: COLORS.ICON_500,
-    },
-    fieldName: {
-        width: "55px",
-        height: "18px",
-        textTransform: "none",
-        Color: COLORS.CHARCOAL_GREY_100
-    },
-    actions: {
-        margin: theme.spacing(0),
-        padding: theme.spacing(1)
-    },
-    actionArea: {
-        display: "flex",
-        width: "auto",
-    },
-    content:{
-        padding: theme.spacing(0)
-    }
+  root: {
+    width: "358px",
+    height: "90px",
+    padding: theme.spacing(1, 1, 1, 8),
+    borderRadius: "4px",
+    boxShadow: "none",
+  },
+  image: {
+    width: "60px",
+    height: "75px",
+    margin: theme.spacing(2, 2),
+    objectFit: "contain",
+  },
+  title: {
+    width: "263px",
+    height: "22px",
+    margin: theme.spacing(1),
+    color: COLORS.CHARCOAL_GREY_100,
+  },
+  author: {
+    width: "14px",
+    height: "18px",
+    color: COLORS.ICON_500,
+    textTransform: "none",
+  },
+  authorName: {
+    width: "150px",
+    height: "18px",
+    color: COLORS.CHARCOAL_GREY,
+    textTransform: "none",
+    textAlign: "left",
+  },
+  field: {
+    width: "32px",
+    height: "18px",
+    textTransform: "none",
+    color: COLORS.ICON_500,
+  },
+  fieldName: {
+    width: "55px",
+    height: "18px",
+    textTransform: "none",
+    Color: COLORS.CHARCOAL_GREY_100,
+  },
+  actions: {
+    margin: theme.spacing(0),
+    padding: theme.spacing(1),
+  },
+  actionArea: {
+    display: "flex",
+    width: "auto",
+  },
+  content: {
+    padding: theme.spacing(0),
+  },
 });
 &nbsp;
-export type SearchResultCardProps={
-    title: string;
-    authorName: string;
-    field: string;
-    image: string;
-}
+export type SearchResultCardProps = {
+  title: string;
+  authorName: string;
+  field: string;
+  image: string;
+};
 &nbsp;
 const SearchResultCard: React.FC&lt;SearchResultCardProps&gt; = ({
-    title,
-    field,
-    authorName,
-    image,
+  title,
+  field,
+  authorName,
+  image,
 }) =&gt; {
+  const classes = useStyles();
+  return (
+    &lt;Card className={classes.root}&gt;
+      &lt;CardActionArea className={classes.actionArea}&gt;
+        &lt;CardMedia className={classes.image} component="img" image={image} /&gt;
+        &lt;CardContent className={classes.content}&gt;
+          &lt;Typography className={classes.title} variant="body2"&gt;
+            {title}
+          &lt;/Typography&gt;
+          &lt;CardActions className={classes.actions}&gt;
+            &lt;Typography className={classes.author} variant="overline"&gt;
+              by
+            &lt;/Typography&gt;
+            &lt;Typography className={classes.authorName} variant="caption"&gt;
+              {authorName}
+            &lt;/Typography&gt;
+          &lt;/CardActions&gt;
+          &lt;CardActions className={classes.actions}&gt;
+            &lt;Typography className={classes.field} variant="overline"&gt;
+              Field :
+            &lt;/Typography&gt;
+            &lt;Typography className={classes.fieldName} variant="overline"&gt;
+              {field}
+            &lt;/Typography&gt;
+          &lt;/CardActions&gt;
+        &lt;/CardContent&gt;
+      &lt;/CardActionArea&gt;
+    &lt;/Card&gt;
+  );
+};
 &nbsp;
-    const classes = useStyles();
-    return (
-        &lt;Card className={classes.root}&gt;
-            &lt;CardActionArea className={classes.actionArea}&gt;
-                &lt;CardMedia className={classes.image}
-                    component="img"
-                    image={image} /&gt;
-                &lt;CardContent className={classes.content}&gt;
-                    &lt;Typography className={classes.title} variant="body2"&gt;{title}&lt;/Typography&gt;
-                    &lt;CardActions className={classes.actions}&gt;
-                        &lt;Typography className={classes.author} variant="overline"&gt;by&lt;/Typography&gt;
-                        &lt;Typography className={classes.authorName} variant="caption"&gt;{authorName}&lt;/Typography&gt;
-                    &lt;/CardActions&gt;
-                    &lt;CardActions className={classes.actions}&gt;
-                        &lt;Typography className={classes.field} variant="overline"&gt;Field :&lt;/Typography&gt;
-                        &lt;Typography className={classes.fieldName} variant="overline"&gt;{field}&lt;/Typography&gt;
-                    &lt;/CardActions&gt;
-                &lt;/CardContent&gt;
-            &lt;/CardActionArea&gt;
-        &lt;/Card&gt;
-    );
-}
-&nbsp;
-export default SearchResultCard;</pre></td></tr></table></pre>
+export default SearchResultCard;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Sep 05 2021 13:40:19 GMT+0530 (India Standard Time)
+                at Sun Sep 05 2021 21:50:53 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

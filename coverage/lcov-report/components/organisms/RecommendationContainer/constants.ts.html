@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/atoms/InputField/index.tsx</title>
+    <title>Code coverage report for components/organisms/RecommendationContainer/constants.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/atoms/InputField</a> index.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">components/organisms/RecommendationContainer</a> constants.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -77,7 +77,16 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -90,34 +99,46 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span></td><td class="text"><pre class="prettyprint lang-js">import TextField from '@material-ui/core/TextField';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { RecommendationBookCardProps } from "../RecommendationBookCard/RecommendationBookCard";
 &nbsp;
-export type TextFieldProps={
-  placeholder?:string;
-  value?:unknown;
-  type?:string;
-  size?:'small'|'medium';
-  disableUnderline?:boolean;
-  autoFocus?:boolean;
-  className?:string;
-  onChange?:React.ChangeEventHandler&lt;HTMLTextAreaElement | HTMLInputElement&gt;;
-}
-&nbsp;
-const InputField:React.FC&lt;TextFieldProps&gt;= ({placeholder,size,autoFocus,value,type,onChange,disableUnderline,className}) =&gt; {
-  return (
-      &lt;TextField value={value} size={size}  placeholder={placeholder} autoFocus={autoFocus} onChange={onChange} type={type} InputProps={{ disableUnderline: disableUnderline }} className={className}/&gt;
-  );
-&nbsp;
-}
-&nbsp;
-export default InputField;</pre></td></tr></table></pre>
+export const bookData: RecommendationBookCardProps[] = [
+    {
+      title: "Crystal chemistry",
+      authorName: "Joe Pearson",
+      image:
+        "https://cdn.zeplin.io/5f03041d8c8fc11335546618/assets/E3EEB4FA-4DF1-491D-8A51-DC1C1921FB60.png",
+    },
+    {
+      title: "Inorganic chemistry",
+      authorName: "Joe Pearson",
+      image:
+        "https://cdn.zeplin.io/5f03041d8c8fc11335546618/assets/03991C69-3988-432F-AD72-535D7FCFFC54.png",
+    },
+    {
+      title: "Bioorganic chemistry",
+      authorName: "Joe Pearson",
+      image:
+        "https://cdn.zeplin.io/5f03041d8c8fc11335546618/assets/19118712-5417-4364-9FC6-59FA289CE148.png",
+    },
+    {
+      title: "Basic Physics",
+      authorName: "Joe Pearson",
+      image:
+        "https://cdn.zeplin.io/5f03041d8c8fc11335546618/assets/BFB91888-5030-4E35-878F-68EC357D95CE.png",
+    },
+  ];</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

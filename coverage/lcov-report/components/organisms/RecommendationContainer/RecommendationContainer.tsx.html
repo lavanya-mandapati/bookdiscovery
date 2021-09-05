@@ -119,8 +119,18 @@
 <a name='L60'></a><a href='#L60'>60</a>
 <a name='L61'></a><a href='#L61'>61</a>
 <a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -167,6 +177,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -181,76 +194,87 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
-import RecommendationBookCard, { RecommendationBookCardProps } from "../RecommendationBookCard/RecommendationBookCard";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
+import RecommendationBookCard, {
+  RecommendationBookCardProps,
+} from "../RecommendationBookCard/RecommendationBookCard";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import { COLORS } from '../../../theme/constants';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import { COLORS } from "../../../theme/constants";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import theme from "../../../theme/theme";
 &nbsp;
-export type RecommendationContainerProps={
-    cardClicked?: ()=&gt;any;
-    data: Array&lt;RecommendationBookCardProps&gt;;
-}
+export type RecommendationContainerProps = {
+  cardClicked?: () =&gt; any;
+  data: Array&lt;RecommendationBookCardProps&gt;;
+};
 const useStyles = makeStyles({
-    heading: {
-        width: "475px",
-        height: "38px",
-        margin: theme.spacing(4,3,1,20),
-        color: COLORS.CHARCOAL_GREY_100
-    },
-    text: {
-        width: "68px",
-        height: "24px",
-        margin: theme.spacing(5,2,1,125),
-        color: COLORS.PRIMARY_COLOR_500,
-    },
-    icon: {
-        color: COLORS.PRIMARY_COLOR_500,
-        margin: theme.spacing(7,2,1,0),
-        fontSize: "12px"
-    },
-    textContainer:{
-        display: "flex"
-    },
-    grid:{
-        display: "flex",
-        marginLeft: theme.spacing(16),
-        marginRight: theme.spacing(20)
-    }
-})
+  heading: {
+    width: "475px",
+    height: "38px",
+    margin: theme.spacing(4, 3, 1, 20),
+    color: COLORS.CHARCOAL_GREY_100,
+  },
+  text: {
+    width: "68px",
+    height: "24px",
+    margin: theme.spacing(5, 2, 1, 125),
+    color: COLORS.PRIMARY_COLOR_500,
+  },
+  icon: {
+    color: COLORS.PRIMARY_COLOR_500,
+    margin: theme.spacing(7, 2, 1, 0),
+    fontSize: "12px",
+  },
+  textContainer: {
+    display: "flex",
+  },
+  grid: {
+    display: "flex",
+    marginLeft: theme.spacing(16),
+    marginRight: theme.spacing(20),
+  },
+});
 const RecommendationContainer: React.FC&lt;RecommendationContainerProps&gt; = ({
-    data
+  data,
 }) =&gt; {
-    const classes = useStyles();
-    const recommendationCards = data.map((dataItem) =&gt; {
-        return &lt;RecommendationBookCard
-            authorName={dataItem.authorName}
-            title={dataItem.title}
-            image={dataItem.image} /&gt;
-    })
+  const classes = useStyles();
+  const recommendationCards = data.map((dataItem) =&gt; {
     return (
-        &lt;React.Fragment&gt;
-            &lt;Grid className={classes.textContainer}&gt;
-            &lt;Typography variant="h3" className={classes.heading}&gt;Recommendations based on your search&lt;/Typography&gt;
-            &lt;Typography variant="subtitle2" className={classes.text}&gt;See more&lt;/Typography&gt;
-            &lt;ArrowForwardIosIcon className={classes.icon} /&gt;
-            &lt;/Grid&gt;
-            &lt;Grid className={classes.grid}&gt;
-                   {recommendationCards}
-            &lt;/Grid&gt;
-        &lt;/React.Fragment&gt;
+      &lt;RecommendationBookCard
+        authorName={dataItem.authorName}
+        title={dataItem.title}
+        image={dataItem.image}
+      /&gt;
     );
-}
+  });
+  return (
+    &lt;React.Fragment&gt;
+      &lt;Grid className={classes.textContainer}&gt;
+        &lt;Typography variant="h3" className={classes.heading}&gt;
+          Recommendations based on your search
+        &lt;/Typography&gt;
+        &lt;Typography variant="subtitle2" className={classes.text}&gt;
+          See more
+        &lt;/Typography&gt;
+        &lt;ArrowForwardIosIcon className={classes.icon} /&gt;
+      &lt;/Grid&gt;
+      &lt;Grid className={classes.grid}&gt;{recommendationCards}&lt;/Grid&gt;
+    &lt;/React.Fragment&gt;
+  );
+};
 &nbsp;
-export default RecommendationContainer;</pre></td></tr></table></pre>
+export default RecommendationContainer;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Sep 05 2021 13:40:19 GMT+0530 (India Standard Time)
+                at Sun Sep 05 2021 21:50:53 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

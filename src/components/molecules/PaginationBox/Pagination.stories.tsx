@@ -6,7 +6,7 @@ export default {
     component: Pagination
 };
 
-const Template = (args) => <Pagination />;
+const Template = () => <Pagination />;
 
 export const Default = Template.bind({});
 
