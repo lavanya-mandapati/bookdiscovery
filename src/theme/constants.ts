@@ -26,6 +26,7 @@ export const COLORS: ColorMap = {
     SECONDARY_300: "#9dbdd5",
     SECONDARY_700: "#213554",
     CHARCOAL_GREY: "#3e3f42",
+    CHARCOAL_GREY_100:'#6b6c6f'
 
 };
 

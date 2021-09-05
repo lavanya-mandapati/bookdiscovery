@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topics renders correctly should match shapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-container-1"
+  >
+    <img
+      alt="Snow"
+      src="https://cdn.zeplin.io/5f03041d8c8fc11335546618/assets/296A1994-087A-4F86-BC94-D8E3D96946EE.png"
+    />
+    <button
+      class="makeStyles-btn-2"
+    >
+      Discover
+    </button>
+  </div>
+</DocumentFragment>
+`;

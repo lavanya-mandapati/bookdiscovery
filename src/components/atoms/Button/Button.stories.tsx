@@ -6,19 +6,12 @@ export default {
     component: CustomButton
 };
 
-const TemplateA = (args) => <CustomButton name="Start Your Journey" />;
-
-const TemplateB = (args) => <CustomButton name="Reply" />;
-
-export const Primary = TemplateA.bind({});
-
-export const Basic = TemplateB.bind({});
-
-Basic.args = {
-    variant: "outlined",
-};
+const Template = (args) => <CustomButton {...args} />
+ 
+export const Primary = Template.bind({});
 
 Primary.args = {
+    name: "Next",
     color: "primary",
     variant: "contained",
-};
+}

@@ -7,12 +7,10 @@ describe("Avatar test",()=>{
     it("should render letter",()=>{
         const {container}=render(<Avatar  children="T" />)
         expect(container.firstChild).toBeTruthy();
-        console.log("container",container);
     });
 
     it("should match the snapshot",()=>{
         const wrapper=render(<Avatar  children="T" />)
-        console.log("wrapper",wrapper);
         expect(wrapper).toBeDefined();
         expect(wrapper.queryByText("T")).toBeInTheDocument();
     });

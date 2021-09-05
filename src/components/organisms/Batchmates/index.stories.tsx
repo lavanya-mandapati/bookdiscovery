@@ -4,7 +4,7 @@ import {Story} from "@storybook/react";
 import Batchmates, {BatchmatesProps} from "."
 
 const BatchmatesStory = {
-    title: "Organism/Batchmates Mock",
+    title: "Organisms/Batchmates Mock",
     component: Batchmates,
 }
 

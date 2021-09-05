@@ -6,6 +6,5 @@ describe("logo renders correctly", () => {
         const { asFragment } = render(<Logo />);
         expect(asFragment()).toMatchSnapshot()
     });
-  
-  });
+});
 

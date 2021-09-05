@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecommdationBookCard Testing Matches Snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <td
+      class="MuiTableCell-root makeStyles-cell-15"
+    >
+      <img
+        class="MuiCardMedia-root makeStyles-image-2 MuiCardMedia-media MuiCardMedia-img"
+        src="https://cdn.zeplin.io/5f03041d8c8fc11335546618/assets/920F4926-3BD5-47FB-A32A-32C03DE1BB71.png"
+      />
+    </td>
+    <div
+      class="MuiCardContent-root makeStyles-content-14"
+    >
+      <div
+        class="MuiCardActions-root makeStyles-titleActions-9 MuiCardActions-spacing"
+      >
+        <h6
+          class="MuiTypography-root makeStyles-title-3 MuiTypography-h6"
+        >
+          Nature Chemistry
+        </h6>
+      </div>
+      <div
+        class="MuiCardActions-root makeStyles-actions-8 MuiCardActions-spacing"
+      >
+        <p
+          class="MuiTypography-root makeStyles-author-4 MuiTypography-body2"
+        >
+          Author
+        </p>
+        <h6
+          class="MuiTypography-root makeStyles-authorName-5 MuiTypography-subtitle2"
+        >
+          J D Lee
+        </h6>
+      </div>
+      <div
+        class="MuiCardActions-root makeStyles-actions-8 MuiCardActions-spacing"
+      >
+        <span
+          aria-label="4 Stars"
+          class="MuiRating-root MuiRating-sizeSmall MuiRating-readOnly"
+          role="img"
+        >
+          <span>
+            <span
+              class="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              class="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              class="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              class="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              class="MuiRating-icon MuiRating-iconEmpty"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+        </span>
+        <p
+          class="MuiTypography-root makeStyles-star-6 MuiTypography-body1"
+        >
+          4.0
+        </p>
+        <span
+          class="MuiTypography-root makeStyles-rating-7 MuiTypography-overline"
+        >
+          (1,204 ratings)
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root"
+    />
+    <div
+      class="MuiCardActions-root makeStyles-actions-8 MuiCardActions-spacing"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-bookmarkBorder-11"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-reply-12"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-playlist-13"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13 10H3c-.55 0-1 .45-1 1s.45 1 1 1h10c.55 0 1-.45 1-1s-.45-1-1-1zm0-4H3c-.55 0-1 .45-1 1s.45 1 1 1h10c.55 0 1-.45 1-1s-.45-1-1-1zm5 8v-3c0-.55-.45-1-1-1s-1 .45-1 1v3h-3c-.55 0-1 .45-1 1s.45 1 1 1h3v3c0 .55.45 1 1 1s1-.45 1-1v-3h3c.55 0 1-.45 1-1s-.45-1-1-1h-3zM3 16h6c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1s.45 1 1 1z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
